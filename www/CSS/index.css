@@ -1,5 +1,5 @@
 
+@import "preferences/preferences.css";
 
-* {
-   color:navy ;
-}
+@import 'shared/theme.css';
+
