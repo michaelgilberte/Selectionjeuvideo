@@ -7,70 +7,212 @@
     <meta name="préférences" content="width=device-width, initial-scale=1.0">
     <meta description="Questionnaire pour déterminer le jeu correspondant à mes envies">
     <title>Mes Préférences de jeux</title>
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="dist/index.css">
 </head>
 
 <body>
 
-    <header>Mes préférences</header>
+    <header>
 
-    <h1>Catégories de jeux</h1>
-    <section>
-        <form method="GET" action="">
-        
-            <input type="checkbox" id="catégorie"><label>Indépendant</label> <br>
-            <input type="checkbox" id="catégorie"><label>Stratégie</label><br>
-            <input type="checkbox" id="catégorie"><label>Gestion</label><br>
-            <input type="checkbox" id="catégorie"><label>Action </label><br>
-            <input type="checkbox" id="catégorie"><label>RPG</label><br>
-            <input type="checkbox" id="catégorie"><label>Aventure</label><br>
-            <input type="checkbox" id="catégorie"><label>Simulation</label><br>
-            <input type="checkbox" id="catégorie"><label>Course</label><br>
-            <input type="checkbox" id="catégorie"><label>Sport</label><br>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo">Logo</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                    <i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="accueil.html">Accueil</a></li>
+                    <li><a href="mabibliotheque.html">Ma bibliothèque</a></li>
+                    <li><a href="random.html">Jeu au hasard</a></li>
+
+                </ul>
+            </div>
+        </nav>
+
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="accueil.html">Accueil</a></li>
+            <li><a href="mabibliotheque.html">Ma bibliothèque</a></li>
+            <li><a href="random.html">Jeu au hasard</a></li>
+        </ul>
+
+    </header>
+
+
+    <section class="categories">
+
+        <h1>Catégories de jeux</h1>
+
+        <p>Sélectionne les catégories de jeux que tu préfères :</p>
+
+        <form method="GET" action="#">
+            <p>
+                <label>
+                    <input type="checkbox" class="filled-in" checked="checked" id="catégorie" />
+                    <span>Indépendant</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" class="filled-in" checked="checked" id="catégorie" />
+                    <span>Stratégie</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" class="filled-in" checked="checked" id="catégorie" />
+                    <span>Gestion</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" class="filled-in" checked="checked" id="catégorie" />
+                    <span>Action</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" class="filled-in" checked="checked" id="catégorie" />
+                    <span>RPG</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" class="filled-in" checked="checked" id="catégorie" />
+                    <span>Aventure</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" class="filled-in" checked="checked" id="catégorie" />
+                    <span>Simulation</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" class="filled-in" checked="checked" id="catégorie" />
+                    <span>Course</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" class="filled-in" checked="checked" id="catégorie" />
+                    <span>Sport</span>
+                </label>
+            </p>
+
         </form>
+
     </section>
 
-    <h1>Budget</h1>
-    <section>
+    <section class="budget">
+
+        <h1>Budget</h1>
+
+        <p>Dis-moi ton budget :</p>
+
         <ol>
             <li>0-10€</li>
-            <li>11-15€</li>
-            <li>16-20€</li>
-            <li>21-25€</li>
-            <li>26-35€</li>
-            <li>36-50€</li>
+            <li>11-20€</li>
+            <li>21-30€</li>
+            <li>30-40€</li>
+            <li>40-50€</li>
             <li>50€ et plus</li>
         </ol>
 
-        <form method="GET" action="" min ="0" max="" step="">
-            <input type="range"> 
+
+
+        <form action="#">
+            <p class="range-field">
+                <input type="range" id="test5" min="0" max="" step="10" />
+            </p>
+        </form>
+
+    </section>
+
+    <section class="humeur">
+
+        <h1>Humeur</h1>
+
+        <p>Je veux un jeu qui soit...</p>
+
+        <form method="GET" action="#">
+            <p>
+                <label>
+                    <input type="checkbox" class="filled-in" checked="checked" id="humeur" />
+                    <span>Joyeux</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" class="filled-in" checked="checked" id="humeur" />
+                    <span>Triste</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" class="filled-in" checked="checked" id="humeur" />
+                    <span>Poétique</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" class="filled-in" checked="checked" id="humeur" />
+                    <span>Mélancolique</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" class="filled-in" checked="checked" id="humeur" />
+                    <span>Défouloir</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" class="filled-in" checked="checked" id="humeur" />
+                    <span>Comique</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" class="filled-in" checked="checked" id="humeur" />
+                    <span>Cérébral</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" class="filled-in" checked="checked" id="humeur" />
+                    <span>Dynamique</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" class="filled-in" checked="checked" id="humeur" />
+                    <span>Sportif</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" class="filled-in" checked="checked" id="humeur" />
+                    <span>Effrayant</span>
+                </label>
+            </p>
 
         </form>
 
     </section>
 
-    <h1>Je veux un jeu qui soit...</h1>
-    <section>
-
-        <form method="GET" action=""> 
-            <input type="checkbox" id="humeur"><label>Joyeux</label> <br>
-            <input type="checkbox" id="humeur"><label>Triste</label><br>
-            <input type="checkbox" id="humeur"><label>Poétique</label><br>
-            <input type="checkbox" id="humeur"><label>Mélancolique </label><br>
-            <input type="checkbox" id="humeur"><label>Défouloir</label><br>
-            <input type="checkbox" id="humeur"><label>Comique</label><br>
-            <input type="checkbox" id="humeur"><label>Cérébral</label><br>
-            <input type="checkbox" id="humeur"><label>Dynamique</label><br>
-            <input type="checkbox" id="humeur"><label>Sportif</label><br>
-        
-            </form>
-
-    </section> <br>
-    <input type="submit" class="mon-bouton-oui" action="../jeupropose.html" value="Voir à quel jeu je joue aujourd'hui"> <br>
     <br>
+
+    <button class="btn waves-effect waves-light" id="mon-bouton-oui" action="../jeupropose.html" type="submit"
+        name="action">Voir à quel jeu
+        je joue aujourd'hui
+        <i class="material-icons right">send</i>
+    </button>
+
+    <br>
+
+
+    <script type="text/javascript" src="dist/index.js"></script>
 
 </body>
 
 </html>
-
-
