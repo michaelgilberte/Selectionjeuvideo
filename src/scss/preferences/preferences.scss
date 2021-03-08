@@ -11,12 +11,8 @@ list-style-type: none ;
 
 
 
-type.checkbox {
-    background: inherit;
-    color:green  ;
-}
-
-[type="submit"] {
-    font-size: x-large;
-    color:red;
+.section {
+    display:block;
+    width:100% ;
+    height:5vh
 }
