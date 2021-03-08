@@ -1,0 +1,31 @@
+
+@import "../node_modules/material-design-icons/iconfont/material-icons.css";
+@import "../node_modules/materialize-css";
+@import "mabibliotheque.scss";
+@import "menudeselection.scss";
+
+.nav-wrapper {
+    color:ivory;
+    background-color:#0D47A1;
+  }
+
+.material-icons {
+    color: ivory;
+}
+
+.page-footer {
+    background-color:#0D47A1;
+    color: ivory;
+    text-align: left;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
