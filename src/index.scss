@@ -1,6 +1,7 @@
-
-@import "../node_modules/material-design-icons/iconfont/material-icons.css";
-@import "../node_modules/materialize-css";
+@import '~materialize-css' ;
+@import "~material-design-icons/iconfont/material-icons.css";
+@import './scss/shared/theme.scss';
+@import "./scss/preferences/preferences.scss";
 @import "mabibliotheque.scss";
 @import "menudeselection.scss";
 
@@ -28,4 +29,3 @@ body {
   main {
     flex: 1 0 auto;
   }
-
