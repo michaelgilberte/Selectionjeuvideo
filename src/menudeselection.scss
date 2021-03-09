@@ -1,0 +1,51 @@
+
+
+* { 
+    color: #373737;
+}
+
+header { 
+    height: 3em;
+    margin: 0;
+    text-align: center;
+    background-image: url(squelettes/img/bandeau.png);
+margin:0;
+}
+
+img.center {
+    display: block;
+    margin: 2 auto;
+}
+
+h1 { 
+    margin: 0;
+    color: #f5f5f5;
+    text-size-adjust: 2em;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #ffffff;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    line-height: 1em;
+    margin: 0;
+}
+
+[type="submit"] {
+    color: #1b1b1b;
+    font-size: 2em; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 10em;
+}
+.btn-circle.btn-lg {
+    background-color: #5e92f3;
+    width: 3.125rem;
+    height: 3.125rem;
+    padding: 0.625rem 1rem;
+    font-size: 1.125rem;
+    line-height: 1.33;
+    border-radius: 1.563rem;
+  }

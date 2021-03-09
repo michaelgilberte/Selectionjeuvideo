@@ -45,6 +45,9 @@ module.exports = {
             host: 'localhost',
             port: 3000,
             files: [
+
+                'www/mabibliotheque.html',
+                'www/menudeselection.html',
                 'www/chargement.html',
                 'www/preferences.html'
                 // add other files to watch for hot reload

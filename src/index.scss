@@ -2,5 +2,30 @@
 @import "~material-design-icons/iconfont/material-icons.css";
 @import './scss/shared/theme.scss';
 @import "./scss/preferences/preferences.scss";
+@import "mabibliotheque.scss";
+@import "menudeselection.scss";
 
+.nav-wrapper {
+    color:ivory;
+    background-color:#0D47A1;
+  }
 
+.material-icons {
+    color: ivory;
+}
+
+.page-footer {
+    background-color:#0D47A1;
+    color: ivory;
+    text-align: left;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
