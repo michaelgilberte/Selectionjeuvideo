@@ -5,54 +5,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="accueil" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
-    <link rel="stylesheet" type="text/css" href="css/accueil/accueil.css"/>
-    <script type="text/javascript" src="js/monjs.js"></script>
+    <link rel="stylesheet" type="text/css" href="dist/index.css">
 </head>
- 
-<header>
-    Accueil
-</header>  
- 
-    <body>
-        <h1>S'inscrire</h1>
-        
-        Déjà membre ? Connexion <br>
-         
-            <div>
-                <section>
-                    <form method="GET" action=""> 
-                    
-                        <input type="submit" class="connexionfacebook" value="Connexion via Facebook">
-                    </form>
-                </section>
-                <section>
-                    <form method="GET" action=""> 
-                    
-                    <input type="submit" class="connexiongoogle" value="Connexion via Google">
-                </form> 
-                </section>
-                ou
-                <section>
-                    <form>
-                        <input type="email" class="connexionemail" value="Adresse e-mail">
-                    </form>
-                </section>
-                <section>
-                    <form>
-                        <input type="password" class="connexionemail" value="Mot de passe">
-                    </form>     
-                    Mot de passe oublié
-                <section>   
-                    <form>
-                            <input type="checkbox"><label>Se souvenir</label>
-                    </form>
-                </section>
-                <section>
-                    <form action="">
-                        <button type="submit" class="seconnecter">Se connecter</button> 
-                    </form>
-                </section>
+
+<body>
+
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">Sélectionner son jeu vidéo</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="menudeselection.html">Mon espace</a></li>
+                <li><a href="mabibliotheque.html">Ma bibliothèque</a></li>
+                <li><a href="preferences.html">Sélectionner votre jeu</a></li>
+                <li><a href="random.html">Jeu au hasard</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="accueil.html">Accueil</a></li>
+        <li><a href="menudeselection.html">Mon espace</a></li>
+        <li><a href="mabibliotheque.html">Ma bibliothèque</a></li>
+        <li><a href="preferences.html">Sélectionner votre jeu</a></li>
+        <li><a href="random.html">Jeu au hasard</a></li>
+    </ul>
+
+    <h1>S'inscrire</h1>
+
+    <form action class="container">
+        <p>Déjà Membre ? Connexion</p>
+        <div class="row">
+            <div id="connexiongoogle" class="waves-effect waves-light btn social google col s7 offset-s3">
+                <i class="fa fa-google"></i>Se connecter via Google
             </div>
-    </body>
- 
+        </div>
+        <div class="row">
+            <div id="connexionfacebook" class="waves-effect waves-light btn social facebook col s7 offset-s3">
+                <i class="fa fa-facebook"></i>Se connecter via Facebook
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s7 offset-s3">
+                <div class="row">
+                    <p>ou par e-mail</p>
+                    <div class="input-field col s10">
+                        <i class="material-icons prefix">textsms</i>
+                        <input type="text" id="autocomplete-input" class="mailadresscol s6 offset-s3">
+                        <label for="autocomplete-input">Adresse e-mail</label>
+                    </div>
+                    <div class="input-field col s10">
+                        <i class="material-icons prefix">textsms</i>
+                        <input type="text" id="autocomplete-input" class="passwordcol s6 offset-s3">
+                        <label for="autocomplete-input">Mot de passe</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section>
+
+            <p>
+                <label>
+                    <input type="checkbox" class="filled-in" checked="checked">
+                    <span>Se souvenir</span>
+                </label>
+            <p>
+
+        </section>
+    </form>
+    <p>Mot de passe oublié ?</p>
+    <a class="waves-effect waves-light btn">Se connecter</a>
+
+
+    <script type="text/javascript" src="dist/index.js"></script>
+
+
+</body>
 </html>

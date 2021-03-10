@@ -1,62 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="Wareframe qui donne le choix à l'utilisateur. Il peut soit se rendre dans le menu préférences, au hasard ou dans la Bibliothèque" content="width=device-width, initial-scale=1.0">
-    <title>Menudeselection</title>
-    <link rel="stylesheet" type="text/css" href="dist/index.css">
-    <script type="text/javascript" src="dist/index.js"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta
+    name="Wireframe qui donne le choix à l'utilisateur. Il peut soit se rendre dans le menu préférences, au hasard ou dans la Bibliothèque"
+    content="width=device-width, initial-scale=1.0">
+  <title>Menudeselection</title>
+  <link rel="stylesheet" type="text/css" href="./dist/index.css">
+
+
 </head>
+
 <body>
-    <nav>
-        <div class="nav-wrapper">
-          <a href="#!" class="brand-logo">Menu de sélection</a>
-          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="sass.html">Retour</a></li>
-            <li><a href="badges.html">Acceuil</a></li>
-          </ul>
-        </div>
-      </nav>
-    
-      <ul class="sidenav" id="mobile-demo">
-        <li><a href="sass.html">Retout</a></li>
-        <li><a href="badges.html">Acceuil/a></li>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">Sélectionner son jeu vidéo</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="accueil.html">Accueil</a></li>
+        <li><a href="menudeselection.html">Mon espace</a></li>
+        <li><a href="mabibliotheque.html">Ma bibliothèque</a></li>
+        <li><a href="preferences.html">Sélectionner votre jeu</a></li>
+        <li><a href="random.html">Jeu au hasard</a></li>
+
       </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="accueil.html">Accueil</a></li>
+    <li><a href="menudeselection.html">Mon espace</a></li>
+    <li><a href="mabibliotheque.html">Ma bibliothèque</a></li>
+    <li><a href="preferences.html">Sélectionner votre jeu</a></li>
+    <li><a href="random.html">Jeu au hasard</a></li>
+  </ul>
+  <br>
+  </br>
+  <main>
     <br>
-</br>
-<main>
+    <section>
+      <form action="preferences.html" method="get">
+        <button name="subject" type="submit" value="fav_HTML">mes préférences</button>
+      </form>
+    </section>
+    </br>
     <br>
     <section>
-        <form action="preferences.html" method="get">
-            <button name="subject" type="submit" value="fav_HTML">mes préférences</button>
-            </form>
+      <form action="auhasard.html" method="get">
+        <button name="subject" type="submit" value="fav_HTML">au hasard</button>
+      </form>
+      </button>
     </section>
-</br>
-<br>
+    </br>
+    <br>
     <section>
-        <form action="auhasard.html" method="get">
-            <button name="subject" type="submit" value="fav_HTML">au hasard</button>
-            </form>
-    </button>
+      <form action="mabibliotheque.html" method="get">
+        <button name="subject" type="submit" value="fav_HTML">ma bibliothèque</button>
+      </form>
     </section>
-</br>
-<br>
-    <section>
-        <form action="mabibliotheque.html" method="get">
-            <button name="subject" type="submit" value="fav_HTML">ma bibliothèque</button>
-            </form>
-</section>
-<br>
-</br>
-<footer>
-    <footer class="page-footer"> 
+    <br>
+    </br>
+    <footer>
+      <footer class="page-footer">
         <div class="footer-copyright">
-          <div class="container">© 2021 Copyright Text<a class="grey-text text-lighten-4 right" href="#!">More Links</a></div>
+          <div class="container">© 2021 Copyright Text<a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+          </div>
         </div>
       </footer>
-</footer>
+    </footer>
+    <script type="text/javascript" src="dist/index.js"></script>
 </body>
+
 </html>

@@ -45,11 +45,13 @@ module.exports = {
             host: 'localhost',
             port: 3000,
             files: [
-
+                'www/index.html',
+                'www/accueil.html',
                 'www/mabibliotheque.html',
                 'www/menudeselection.html',
                 'www/chargement.html',
-                'www/preferences.html'
+                'www/preferences.html',
+                'www/jeupropose.html',
                 // add other files to watch for hot reload
             ],
             server: {
