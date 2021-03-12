@@ -1,55 +1,5 @@
-export const viewMenuDeSelection = (element) => {
+import template from './menudeselection.html';
 
-    element.innerHTML=`<main>
-    
-    <br>
-    
-    <section>
-    
-    <form action="preferences.html" method="get">
-    
-    <button name="subject" type="submit" value="fav_HTML">mes préférences</button>
-    
-    </form>
-    
-    </section>
-    
-    </br>
-    
-    <br>
-    
-    <section>
-    
-    <form action="auhasard.html" method="get">
-    
-    <button name="subject" type="submit" value="fav_HTML">au hasard</button>
-    
-    </form>
-    
-    </button>
-    
-    </section>
-    
-    </br>
-    
-    <br>
-    
-    <section>
-    
-    <form action="mabibliotheque.html" method="get">
-    
-    <button name="subject" type="submit" value="fav_HTML">ma bibliothèque</button>
-    
-    </form>
-    
-    </section>
-    
-    <br>
-    
-    </br>
-    
-    
-    
-    `
-    
-    };
+export const viewMenuDeSelection = (element) => {
+    element.innerHTML = template
+};
