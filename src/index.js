@@ -1,16 +1,25 @@
 import "../node_modules/materialize-css";
 import "materialize-css";
+import {putNavBar} from "./shared/navbar"
+import {viewAccueil} from "./accueil/accueil";
+import {viewMaBibliotheque} from "./mabibliotheque/mabibliotheque";
+import {viewMenuDeSelection} from "./menudeselection/menudeselection";
+import {viewPreferences} from "./preferences/preferences";
+import {viewChargement} from "./chargement/chargement";
+import {viewJeuPropose} from "./jeupropose/jeupropose";
+
+putNavBar(document.querySelector("header"));
+
+viewAccueil(document.querySelector("main"));
+viewMaBibliotheque(document.querySelector("main"));
+viewMenuDeSelection(document.querySelector("main"));
+viewPreferences(document.querySelector("main"));
+viewChargement(document.querySelector("main"));
+viewJeuPropose(document.querySelector("main"));
 
 
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.fixed-action-btn');
-    var instances = M.FloatingActionButton.init(elems);
-  });
 
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.sidenav');
-    var instances = M.Sidenav.init(elems);
-  });
+
 
 /*Exercice
 const header = document.querySelector("header");
@@ -44,60 +53,10 @@ li3.appendChild(document.createTextNode("Ma biliothèque"));
 header.appendChild(nav);*/
 
 
-  /*Exercice
-const header = document.querySelector("header");
-
-header.innerHTML = `<nav>
-<div class="nav-wrapper">
-    <a href="#!" class="brand-logo">Accueil</a>
-    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-    <ul class="right hide-on-med-and-down">
-        <li><a href="accueil.html">Accueil</a></li>
-        <li><a href="menudeselection.html">Mon espace</a></li>
-        <li><a href="mabibliotheque.html">Ma bibliothèque</a></li>
-        <li><a href="viewPreferences">Sélectionner votre jeu</a></li>
-        <li><a href="random.html">Jeu au hasard</a></li>
-
-    </ul>
-</div>
-</nav>
-
-<ul class="sidenav" id="mobile-demo">
-<li><a href="accueil.html">Accueil</a></li>
-<li><a href="menudeselection.html">Mon espace</a></li>
-<li><a href="mabibliotheque.html">Ma bibliothèque</a></li>
-<li><a href="viewPreferences">Sélectionner votre jeu</a></li>
-<li><a href="random.html">Jeu au hasard</a></li>
-</ul>`;
-$;{header}*/
-
 /*<footer class="page-footer">
     <div class="footer-copyright">
       <div class="container">© 2021 Copyright Text<a class="grey-text text-lighten-4 right" href="#!">More Links</a>
       </div>
     </div>
   </footer>*/
-
-import {viewAccueil} from "./accueil/accueil";
- 
-viewAccueil(document.querySelector("body"));
-
-import {viewPreferences} from "./preferences/preferences";
-
-viewPreferences(document.querySelector("body"));
-
-import {viewChargement} from "./chargement/chargement";
-
-viewChargement(document.querySelector("body"));
-
-import {viewJeuPropose} from "./jeupropose/jeupropose";
-
-viewJeuPropose(document.querySelector("body"));
-
-import {viewMaBibliotheque} from "./mabibliotheque/mabibliotheque";
-
-viewMaBibliotheque(document.querySelector("body"));
-
-import {viewMenuDeSelection} from "./menudeselection/menudeselection";
-
-viewMenuDeSelection(document.querySelector("body"));
+  
