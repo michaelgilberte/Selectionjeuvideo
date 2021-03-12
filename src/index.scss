@@ -1,9 +1,9 @@
 @import '~materialize-css' ;
 @import "~material-design-icons/iconfont/material-icons.css";
 @import 'shared/theme.scss';
-@import "preferences.scss";
-@import "mabibliotheque.scss";
-@import "menudeselection.scss";
-@import "accueil.scss";
-@import "jeupropose.scss";
-@import 'chargement.scss';
+@import "./preferences/preferences.scss";
+@import "./mabibliotheque/mabibliotheque.scss";
+@import "./menudeselection/menudeselection.scss";
+@import "./accueil/accueil.scss";
+@import "./jeupropose/jeupropose.scss";
+@import './chargement/chargement.scss';

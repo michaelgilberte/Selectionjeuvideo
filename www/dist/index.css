@@ -6659,7 +6659,8 @@ button {
   font-size: 1em;
   text-align: left;
   line-height: 1.5em;
-  list-style-type: none; }
+  list-style-type: none;
+  margin-left: 0.3em; }
 
 .section {
   display: block;
