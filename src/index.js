@@ -12,8 +12,6 @@ document.addEventListener('DOMContentLoaded', function() {
     var instances = M.Sidenav.init(elems);
   });
 
-  console.log('hello woooorld');
-
 /*Exercice
 const header = document.querySelector("header");
 
@@ -51,188 +49,55 @@ const header = document.querySelector("header");
 
 header.innerHTML = `<nav>
 <div class="nav-wrapper">
-<a href="#" class="brand-logo">Logo</a>
-<ul id="nav-mobile" class="right hide-on-med-and-down">
-  <li><a href="sass.html">Sass</a></li>
-  <li><a href="badges.html">Components</a></li>
-  <li><a href="collapsible.html">JavaScript</a></li>
-</ul>
+    <a href="#!" class="brand-logo">Accueil</a>
+    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    <ul class="right hide-on-med-and-down">
+        <li><a href="accueil.html">Accueil</a></li>
+        <li><a href="menudeselection.html">Mon espace</a></li>
+        <li><a href="mabibliotheque.html">Ma bibliothèque</a></li>
+        <li><a href="viewPreferences">Sélectionner votre jeu</a></li>
+        <li><a href="random.html">Jeu au hasard</a></li>
+
+    </ul>
 </div>
-</nav>`;
+</nav>
+
+<ul class="sidenav" id="mobile-demo">
+<li><a href="accueil.html">Accueil</a></li>
+<li><a href="menudeselection.html">Mon espace</a></li>
+<li><a href="mabibliotheque.html">Ma bibliothèque</a></li>
+<li><a href="viewPreferences">Sélectionner votre jeu</a></li>
+<li><a href="random.html">Jeu au hasard</a></li>
+</ul>`;
 $;{header}*/
 
+/*<footer class="page-footer">
+    <div class="footer-copyright">
+      <div class="container">© 2021 Copyright Text<a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+      </div>
+    </div>
+  </footer>*/
 
+import {viewAccueil} from "./accueil/accueil";
+ 
+viewAccueil(document.querySelector("body"));
 
-const viewPreferences = (main) => {
+import {viewPreferences} from "./preferences/preferences";
 
-main.innerHTML=`<h1>Catégories de jeux</h1>
+viewPreferences(document.querySelector("body"));
 
-<p>Sélectionne les catégories de jeux que tu préfères :</p>
+import {viewChargement} from "./chargement/chargement";
 
-<form method="GET" action="#">
-    <p>
-        <label>
-            <input type="checkbox" class="filled-in" checked="checked" id="catégorie" />
-            <span>Indépendant</span>
-        </label>
-    </p>
-    <p>
-        <label>
-            <input type="checkbox" class="filled-in" checked="checked" id="catégorie" />
-            <span>Stratégie</span>
-        </label>
-    </p>
-    <p>
-        <label>
-            <input type="checkbox" class="filled-in" checked="checked" id="catégorie" />
-            <span>Gestion</span>
-        </label>
-    </p>
-    <p>
-        <label>
-            <input type="checkbox" class="filled-in" checked="checked" id="catégorie" />
-            <span>Action</span>
-        </label>
-    </p>
-    <p>
-        <label>
-            <input type="checkbox" class="filled-in" checked="checked" id="catégorie" />
-            <span>RPG</span>
-        </label>
-    </p>
-    <p>
-        <label>
-            <input type="checkbox" class="filled-in" checked="checked" id="catégorie" />
-            <span>Aventure</span>
-        </label>
-    </p>
-    <p>
-        <label>
-            <input type="checkbox" class="filled-in" checked="checked" id="catégorie" />
-            <span>Simulation</span>
-        </label>
-    </p>
-    <p>
-        <label>
-            <input type="checkbox" class="filled-in" checked="checked" id="catégorie" />
-            <span>Course</span>
-        </label>
-    </p>
-    <p>
-        <label>
-            <input type="checkbox" class="filled-in" checked="checked" id="catégorie" />
-            <span>Sport</span>
-        </label>
-    </p>
+viewChargement(document.querySelector("body"));
 
-</form>
+import {viewJeuPropose} from "./jeupropose/jeupropose";
 
-<section class="budget">
+viewJeuPropose(document.querySelector("body"));
 
-<h1>Budget</h1>
+import {viewMaBibliotheque} from "./mabibliotheque/mabibliotheque";
 
-<p>Dis-moi ton budget :</p>
+viewMaBibliotheque(document.querySelector("body"));
 
-<ol>
-    <li>0-10€</li>
-    <li>11-20€</li>
-    <li>21-30€</li>
-    <li>30-40€</li>
-    <li>40-50€</li>
-    <li>50€ et plus</li>
-</ol>
+import {viewMenuDeSelection} from "./menudeselection/menudeselection";
 
-
-
-<form action="#">
-    <p class="range-field">
-        <input type="range" id="test5" min="0" max="" step="10" />
-    </p>
-</form>
-
-</section>
-
-
-<section class="humeur">
-
-<h1>Humeur</h1>
-
-<p>Je veux un jeu qui soit...</p>
-
-<form method="GET" action="#">
-    <p>
-        <label>
-            <input type="checkbox" class="filled-in" checked="checked" id="humeur" />
-            <span>Joyeux</span>
-        </label>
-    </p>
-    <p>
-        <label>
-            <input type="checkbox" class="filled-in" checked="checked" id="humeur" />
-            <span>Triste</span>
-        </label>
-    </p>
-    <p>
-        <label>
-            <input type="checkbox" class="filled-in" checked="checked" id="humeur" />
-            <span>Poétique</span>
-        </label>
-    </p>
-    <p>
-        <label>
-            <input type="checkbox" class="filled-in" checked="checked" id="humeur" />
-            <span>Mélancolique</span>
-        </label>
-    </p>
-    <p>
-        <label>
-            <input type="checkbox" class="filled-in" checked="checked" id="humeur" />
-            <span>Défouloir</span>
-        </label>
-    </p>
-    <p>
-        <label>
-            <input type="checkbox" class="filled-in" checked="checked" id="humeur" />
-            <span>Comique</span>
-        </label>
-    </p>
-    <p>
-        <label>
-            <input type="checkbox" class="filled-in" checked="checked" id="humeur" />
-            <span>Cérébral</span>
-        </label>
-    </p>
-    <p>
-        <label>
-            <input type="checkbox" class="filled-in" checked="checked" id="humeur" />
-            <span>Dynamique</span>
-        </label>
-    </p>
-    <p>
-        <label>
-            <input type="checkbox" class="filled-in" checked="checked" id="humeur" />
-            <span>Sportif</span>
-        </label>
-    </p>
-    <p>
-        <label>
-            <input type="checkbox" class="filled-in" checked="checked" id="humeur" />
-            <span>Effrayant</span>
-        </label>
-    </p>
-
-</form>
-
-</section>
-
-<br>
-
-<button class="btn waves-effect waves-light" id="mon-bouton-oui" action="../jeupropose.html" type="submit"
-    name="action">Voir à quel jeu
-    je joue aujourd'hui
-    <i class="material-icons right">send</i>
-</button>
-
-<br>`};  
-  
-viewPreferences(document.querySelector("main"))
+viewMenuDeSelection(document.querySelector("body"));
