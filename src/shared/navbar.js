@@ -1,29 +1,29 @@
+import { viewPreferences } from '../preferences/preferences';
+import template from './navbar.html';
+
 export const putNavBar = (element) => {
-
-element.innerHTML = `<nav>
-<div class="nav-wrapper">
-    <a href="#!" class="brand-logo">Accueil</a>
-    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-    <ul class="right hide-on-med-and-down">
-        <li><a href="">Accueil</a></li>
-        <li><a href="">Mon espace</a></li>
-        <li><a href="">Ma bibliothèque</a></li>
-        <li><a href="">Sélectionner votre jeu</a></li>
-        <li><a href="">Jeu au hasard</a></li>
-
-    </ul>
-</div>
-</nav>
-
-<ul class="sidenav" id="mobile-demo">
-<li><a href="">Accueil</a></li>
-<li><a href="">Mon espace</a></li>
-<li><a href="">Ma bibliothèque</a></li>
-<li><a href="">Sélectionner votre jeu</a></li>
-<li><a href="">Jeu au hasard</a></li>
-</ul>`;
+    element.innerHTML = template;
     const elems = document.querySelectorAll('.sidenav');
     const instances = M.Sidenav.init(elems);
 
+    const monespace = document.querySelector('.monespace');
+    const monespace2 = document.querySelector('.monespace2');
+    monespace.onclick = () => {
+        viewPreferences(document.querySelector("main"));
+        return false;
+    };
+
+    monespace2.onclick = () => {
+        viewPreferences(document.querySelector("main"));
+        return false;
+
+    };
+
+    
+
 }; 
+
+
+
+
 

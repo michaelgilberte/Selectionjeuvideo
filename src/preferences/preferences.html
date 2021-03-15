@@ -5,59 +5,71 @@
     <form method="GET" action="#">
         <p>
             <label>
-                <input type="checkbox" class="filled-in" checked="checked" id="catégorie" />
+                <input type="checkbox" class="filled-in independant" id="catégorie" />
                 <span>Indépendant</span>
             </label>
         </p>
         <p>
             <label>
-                <input type="checkbox" class="filled-in" checked="checked" id="catégorie" />
+                <input type="checkbox" class="filled-in strategie" id="catégorie" />
                 <span>Stratégie</span>
             </label>
         </p>
         <p>
             <label>
-                <input type="checkbox" class="filled-in" checked="checked" id="catégorie" />
+                <input type="checkbox" class="filled-in gestion" id="catégorie" />
                 <span>Gestion</span>
             </label>
         </p>
         <p>
             <label>
-                <input type="checkbox" class="filled-in" checked="checked" id="catégorie" />
+                <input type="checkbox" class="filled-in action" id="catégorie" />
                 <span>Action</span>
             </label>
         </p>
         <p>
             <label>
-                <input type="checkbox" class="filled-in" checked="checked" id="catégorie" />
+                <input type="checkbox" class="filled-in rpg" id="catégorie" />
                 <span>RPG</span>
             </label>
         </p>
         <p>
             <label>
-                <input type="checkbox" class="filled-in" checked="checked" id="catégorie" />
+                <input type="checkbox" class="filled-in fps" id="catégorie" />
+                <span>FPS</span>
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="checkbox" class="filled-in aventure" id="catégorie" />
                 <span>Aventure</span>
             </label>
         </p>
         <p>
             <label>
-                <input type="checkbox" class="filled-in" checked="checked" id="catégorie" />
+                <input type="checkbox" class="filled-in simulation" id="catégorie" />
                 <span>Simulation</span>
             </label>
         </p>
         <p>
             <label>
-                <input type="checkbox" class="filled-in" checked="checked" id="catégorie" />
+                <input type="checkbox" class="filled-in course" id="catégorie" />
                 <span>Course</span>
             </label>
         </p>
         <p>
             <label>
-                <input type="checkbox" class="filled-in" checked="checked" id="catégorie" />
+                <input type="checkbox" class="filled-in sport" id="catégorie" />
                 <span>Sport</span>
             </label>
         </p>
-    
+        <p>
+            <label>
+                <input type="checkbox" class="filled-in multijoueurs" id="catégorie" />
+                <span>Multijoueurs</span>
+            </label>
+        </p>
+    </div>
     </form>
     
     <section class="budget">
@@ -74,17 +86,10 @@
         <li>40-50€</li>
         <li>50€ et plus</li>
     </ol>
-    
-    
-    
-    <form action="#">
-        <p class="range-field">
-            <input type="range" id="test5" min="0" max="" step="10" />
-        </p>
-    </form>
-    
+  
+    <div id="test-slider" class="noUiSlider"></div> 
+    <span class="min"></span><span class="max"></span>
     </section>
-    
     
     <section class="humeur">
     
@@ -95,61 +100,61 @@
     <form method="GET" action="#">
         <p>
             <label>
-                <input type="checkbox" class="filled-in" checked="checked" id="humeur" />
+                <input type="checkbox" class="filled-in joyeux" id="humeur" />
                 <span>Joyeux</span>
             </label>
         </p>
         <p>
             <label>
-                <input type="checkbox" class="filled-in" checked="checked" id="humeur" />
+                <input type="checkbox" class="filled-in triste" id="humeur" />
                 <span>Triste</span>
             </label>
         </p>
         <p>
             <label>
-                <input type="checkbox" class="filled-in" checked="checked" id="humeur" />
+                <input type="checkbox" class="filled-in poetique" id="humeur" />
                 <span>Poétique</span>
             </label>
         </p>
         <p>
             <label>
-                <input type="checkbox" class="filled-in" checked="checked" id="humeur" />
+                <input type="checkbox" class="filled-in melancolique" id="humeur" />
                 <span>Mélancolique</span>
             </label>
         </p>
         <p>
             <label>
-                <input type="checkbox" class="filled-in" checked="checked" id="humeur" />
-                <span>Défouloir</span>
+                <input type="checkbox" class="filled-in defoulant" id="humeur" />
+                <span>Défoulant</span>
             </label>
         </p>
         <p>
             <label>
-                <input type="checkbox" class="filled-in" checked="checked" id="humeur" />
+                <input type="checkbox" class="filled-in comique" id="humeur" />
                 <span>Comique</span>
             </label>
         </p>
         <p>
             <label>
-                <input type="checkbox" class="filled-in" checked="checked" id="humeur" />
+                <input type="checkbox" class="filled-in cerebral" id="humeur" />
                 <span>Cérébral</span>
             </label>
         </p>
         <p>
             <label>
-                <input type="checkbox" class="filled-in" checked="checked" id="humeur" />
+                <input type="checkbox" class="filled-in dynamique" id="humeur" />
                 <span>Dynamique</span>
             </label>
         </p>
         <p>
             <label>
-                <input type="checkbox" class="filled-in" checked="checked" id="humeur" />
+                <input type="checkbox" class="filled-in sportif" id="humeur" />
                 <span>Sportif</span>
             </label>
         </p>
         <p>
             <label>
-                <input type="checkbox" class="filled-in" checked="checked" id="humeur" />
+                <input type="checkbox" class="filled-in effrayant" id="humeur" />
                 <span>Effrayant</span>
             </label>
         </p>
@@ -157,13 +162,17 @@
     </form>
     
     </section>
+    <div class="erreur-message">
+
+    </div>
     
     <br>
     
     <button class="btn waves-effect waves-light" id="mon-bouton-oui" action="../jeupropose.html" type="submit"
-        name="action">Voir à quel jeu
-        je joue aujourd'hui
+        name="action">Voir à quel jeu je joue aujourd'hui
         <i class="material-icons right">send</i>
     </button>
+    
+   
     
     <br>

@@ -1,4 +1,4 @@
-import "../node_modules/materialize-css";
+import 'nouislider';
 import "materialize-css";
 import {putNavBar} from "./shared/navbar"
 import {viewAccueil} from "./accueil/accueil";
@@ -10,12 +10,7 @@ import {viewJeuPropose} from "./jeupropose/jeupropose";
 
 putNavBar(document.querySelector("header"));
 
-viewAccueil(document.querySelector("main"));
-// viewMaBibliotheque(document.querySelector("main"));
-// viewMenuDeSelection(document.querySelector("main"));
-// viewPreferences(document.querySelector("main"));
-// viewChargement(document.querySelector("main"));
-// viewJeuPropose(document.querySelector("main"));
+viewPreferences(document.querySelector("main"));
 
 
 
